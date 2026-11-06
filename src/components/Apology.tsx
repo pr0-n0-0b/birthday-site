@@ -55,7 +55,7 @@ export function Apology() {
   const [typed, setTyped] = useState("");
   const [finished, setFinished] = useState(false);
 
-  const letter = `${name === "Her" ? "Dear you," : `Dear ${name},`}
+  const letter = `${name === "Laiba" ? "Dear Laiba," : `Dear ${name},`}
 Main dil se tum se maafi mangna chahta hoon. Mujhe afsoos hai ke main tum ko wo sachai aur imandari na de saka jo aap deserve karte thay, aur bina bataye chala gaya. 
 Aap meri zindagi ka sab se haseen hissa thay, aur main khud ko sabit karne mein nakaam raha. Har us aam se din ke liye shukriya jise tum ne apni maujoodgi se khubsoorat banaya. 
 Main dil se sharminda hoon aur teh-e-dil se aap se maafi ka talabgaar hoon.`;

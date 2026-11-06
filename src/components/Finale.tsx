@@ -197,7 +197,7 @@ export function Finale() {
         </Reveal>
         <Reveal delay={0.3}>
           <p className="mt-4 font-script text-4xl sm:text-6xl text-rose-2-300 text-glow-rose">
-            {name === "Her" ? "my once-upon-a-time" : name}
+            {name === "Laiba" ? "my once-upon-a-time" : name}
           </p>
         </Reveal>
         <Reveal delay={0.45}>
@@ -227,7 +227,7 @@ export function Finale() {
           </div>
         </Reveal>
         <Reveal delay={0.7}>
-          <p className="mt-8 text-[10px] uppercase tracking-[0.35em] text-slate-500">Kahi pr bhi click kro</p>
+          <p className="mt-8 text-[10px] uppercase tracking-[0.35em] text-slate-500">Screen pe Kahi pr bhi click kro</p>
         </Reveal>
       </div>
 
@@ -235,10 +235,10 @@ export function Finale() {
       <footer className="relative z-10 border-t border-white/8 px-6 py-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
           <span className="flex items-center gap-2 font-serif text-sm italic text-slate-400">
-            written in light <Heart className="h-3.5 w-3.5 text-rose-2-400" fill="currentColor" strokeWidth={0} /> for {name === "Her" ? "her" : name}
+            written in light <Heart className="h-3.5 w-3.5 text-rose-2-400" fill="currentColor" strokeWidth={0} /> for {name === "Laiba" ? "Laiba" : name}
           </span>
           <span className="text-[10px] uppercase tracking-[0.3em] text-slate-600">
-            a birthday · an apology · a goodbye that's softer than it was
+            a birthday · an apology · HAPPY BIRTHDAY AND SORRY
           </span>
         </div>
       </footer>

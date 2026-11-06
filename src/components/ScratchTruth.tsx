@@ -36,7 +36,7 @@ export function ScratchTruth() {
     ctx.fillStyle = "rgba(20,16,45,.85)";
     ctx.font = `${Math.floor(h * 0.09)}px Manrope, sans-serif`;
     ctx.textAlign = "center";
-    ctx.fillText("S C R A T C H   G E N T L Y", w / 2, h / 2 - 8);
+    ctx.fillText("SCRATCH GENTLY", w / 2, h / 2 - 8);
     ctx.font = `italic ${Math.floor(h * 0.075)}px "Cormorant Garamond", serif`;
     ctx.fillStyle = "rgba(20,16,45,.6)";
     ctx.fillText("wo jo mai ny aj tk nhi kaha", w / 2, h / 2 + h * 0.12);

@@ -1,18 +1,10 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { PencilLine, ChevronDown, Heart } from "lucide-react";
+import { ChevronDown, Heart } from "lucide-react";
 import { NightSky } from "./NightSky";
-import { useHer } from "../lib/name";
 
 export function Hero() {
-  const { name, setName } = useHer();
-  const [editing, setEditing] = useState(false);
-  const [draft, setDraft] = useState(name);
-
-  const commit = () => {
-    setName(draft);
-    setEditing(false);
-  };
+  // Permanently locked to her name
+  const name = "Laiba";
 
   return (
     <section className="relative flex min-h-svh flex-col items-center justify-center overflow-hidden">
@@ -67,46 +59,9 @@ export function Hero() {
           transition={{ delay: 1.5, duration: 1.2 }}
         >
           <span className="font-script text-4xl sm:text-6xl text-rose-2-400 text-glow-warm">
-            {name === "Her" ? "to you, my dearest" : `to you, ${name}`}
+            to you, my dearest Laiba
           </span>
-          <button
-            onClick={() => { setDraft(name === "Her" ? "" : name); setEditing(true); }}
-            aria-label="Add her name"
-            className="group grid h-8 w-8 place-items-center rounded-full border border-white/10 bg-white/5 text-lilac-300/70 transition hover:border-rose-2-400/60 hover:text-rose-2-300"
-            title="Click to add her real name"
-          >
-            <PencilLine className="h-3.5 w-3.5" />
-          </button>
         </motion.div>
-
-        {editing && (
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mt-5 flex items-center gap-3 rounded-full border border-rose-2-400/40 bg-night-800/80 px-3 py-2 backdrop-blur"
-          >
-            <input
-              autoFocus
-              value={draft}
-              onChange={(e) => setDraft(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && commit()}
-              maxLength={24}
-              placeholder="her name…"
-              className="w-40 bg-transparent font-serif text-lg italic text-ember-300 placeholder:text-lilac-300/40 focus:outline-none"
-            />
-            <button
-              onClick={commit}
-              className="rounded-full bg-rose-2-500/90 px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white transition hover:shadow-[0_0_20px_rgba(214,95,128,.6)]"
-            >
-              set
-            </button>
-          </motion.div>
-        )}
-        {!editing && name === "Her" && (
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 0.6 }} transition={{ delay: 2.2 }} className="mt-3 text-[10px] uppercase tracking-[0.3em] text-lilac-300/70">
-            psst —
-          </motion.p>
-        )}
 
         <motion.p
           className="mt-10 max-w-xl font-serif text-lg italic leading-relaxed text-slate-300/90 sm:text-xl"
@@ -115,7 +70,7 @@ export function Hero() {
           transition={{ delay: 2, duration: 1.4 }}
         >
           No gifts. No excuses. Sirf Alfaaz jo mere pass hain —<br className="hidden sm:block" />
-          . Scroll when you're ready.
+          Scroll when you're ready.
         </motion.p>
       </div>
 

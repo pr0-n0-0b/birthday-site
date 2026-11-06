@@ -54,7 +54,7 @@ export function Envelope({ onOpen }: Props) {
             transition={{ duration: 4, repeat: phase === "sealed" ? Infinity : 0, ease: "easeInOut" }}
           >
             <p className="mb-3 text-[10px] uppercase tracking-[0.5em] text-lilac-300/70">a letter · long unsent</p>
-            <p className="mb-10 font-script text-4xl sm:text-5xl text-ember-300/95 text-glow-warm">for {name === "Her" ? "her" : name}</p>
+            <p className="mb-10 font-script text-4xl sm:text-5xl text-ember-300/95 text-glow-warm">for {name === "Laiba" ? "Laiba" : name}</p>
 
             {/* envelope */}
             <div className="perspective-1000 relative">
